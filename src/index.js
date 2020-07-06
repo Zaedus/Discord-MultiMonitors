@@ -14,7 +14,8 @@ const createWindow = () => {
     webPreferences: {
       nodeIntegration: true
     },
-    autoHideMenuBar: true
+    autoHideMenuBar: true,
+    icon: path.join(__dirname, "img", "icon.png")
   });
 
   // and load the index.html of the app.
