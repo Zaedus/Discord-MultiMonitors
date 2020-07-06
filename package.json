@@ -1,13 +1,14 @@
 {
   "name": "discord-multimonitor",
-  "productName": "discord multimonitor",
+  "productName": "Discord Multimonitor",
+  "executableName": "multimonitor",
   "version": "1.0.0",
-  "description": "My Electron application description",
+  "description": "Stream individual monitors on Discord",
   "main": "src/index.js",
   "scripts": {
     "start": "electron-forge start",
     "package": "electron-forge package",
-    "make": "electron-forge make",
+    "make": "electron-forge make --executableName multimonitor",
     "publish": "electron-forge publish",
     "lint": "echo \"No linting configured\""
   },
@@ -19,7 +20,11 @@
   "license": "MIT",
   "config": {
     "forge": {
-      "packagerConfig": {},
+      "icon": "./src/img/icon.png",
+      "packagerConfig": {
+          "icon": "./src/img/icon.png",
+          "executableName": "discord-multimonitor"
+      },
       "makers": [
         {
           "name": "@electron-forge/maker-squirrel",
@@ -35,11 +40,15 @@
         },
         {
           "name": "@electron-forge/maker-deb",
-          "config": {}
+          "config": {
+            "icon": "./src/img/icon.png"
+          }
         },
         {
           "name": "@electron-forge/maker-rpm",
-          "config": {}
+          "config": {
+            "icon": "./src/img/icon.png"
+          }
         }
       ]
     }
