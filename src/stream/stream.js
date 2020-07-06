@@ -21,10 +21,6 @@ ipcRenderer.on('screenId', async (e, id) => {
     video.srcObject = stream;
     video.play();
 
-    var { width, height } = video.getBoundingClientRect();
-
-    //ipcRenderer.send("adjustSize", width, height);
-
     video.oncontextmenu = showPopup;
     video.onclick = showPopup;
 });

@@ -13,7 +13,8 @@ const createWindow = () => {
     height: 600,
     webPreferences: {
       nodeIntegration: true
-    }
+    },
+    autoHideMenuBar: true
   });
 
   // and load the index.html of the app.
@@ -47,11 +48,4 @@ app.on('ready', createWindow);
 
 ipcMain.on("openScreen", (e, data) => {
   createStreamableWindow(JSON.parse(data));
-})
-ipcMain.on("adjustSize", (e, w, h) => {
-  console.log(w, h)
-  BrowserWindow.fromWebContents(e.sender).setBounds({
-    width: w/2,
-    height: h/2
-  })
 })
