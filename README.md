@@ -4,7 +4,7 @@ On linux distros, I have found that Discord doesn't allow users to stream indivi
 
 ## Install
 
-The pre-built binaries are located [here](https://github.com/Zaedus/Discord-MultiMonitors/releases/edit/untagged-1855f3a70acf1e5bf6d9).
+The pre-built binaries are located [here](https://github.com/Zaedus/Discord-MultiMonitors/releases/tag/1.0.0).
 
 ## Build
 
@@ -20,7 +20,7 @@ npm run make
 1. Open the app and then select the screen that you want to share.
 2. After the new media window appears, open Discord.
 3. Join a voice chat. 
-4. Select "Share Your Screen"
+4. Select "Share Your Screen".
 5. Select the window that says `Screen` and then a number.
 
 This should be everything to get you started.
