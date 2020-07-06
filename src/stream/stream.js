@@ -32,6 +32,10 @@ const showPopup = () => {
             click: () => remote.getCurrentWindow().maximize()
         },
         {
+            label: "Unmaximize",
+            click: () => remote.getCurrentWindow().unmaximize()
+        },
+        {
             label: "Minimize",
             click: () => remote.getCurrentWindow().minimize()
         },
