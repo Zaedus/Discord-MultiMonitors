@@ -27,4 +27,4 @@ This should be everything to get you started.
 
 ## Notes
 
-- I don't know how to 
+- I don't know how to make the media window be hidden, but still visible to discord.
